@@ -36,7 +36,6 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import YouTube from "@plasmicpkgs/react-youtube"; // plasmic-import: CHO21V9uYw/codeComponent
 import Button from "../../Button"; // plasmic-import: FS9TNd8gFxWLy/component
 import TextInput from "../../TextInput"; // plasmic-import: U-O7o3saIllC5C/component
 
@@ -71,7 +70,6 @@ export type PlasmicHomepage__OverridesType = {
   menuBar?: p.Flex<"div">;
   h1?: p.Flex<"h1">;
   section1?: p.Flex<"div">;
-  youTube?: p.Flex<typeof YouTube>;
   rowContainer8?: p.Flex<"div">;
   brownColorBg?: p.Flex<"div">;
   section12?: p.Flex<"div">;
@@ -486,14 +484,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 >
                   <div
                     className={classNames(projectcss.all, sty.column__lQEtZ)}
-                  >
-                    <YouTube
-                      data-plasmic-name={"youTube"}
-                      data-plasmic-override={overrides.youTube}
-                      className={classNames("__wab_instance", sty.youTube)}
-                      videoId={"R6MeLqRQzYw" as const}
-                    />
-                  </div>
+                  />
 
                   <div
                     className={classNames(projectcss.all, sty.column___7GiGh)}
@@ -1081,6 +1072,105 @@ function PlasmicHomepage__RenderFunc(props: {
                         sty.button__vfIma
                       )}
                       color={"sand" as const}
+                      onClick={async event => {
+                        const $steps = {};
+                        $steps["setTextInputValue"] = true
+                          ? (() => {
+                              const actionArgs = {
+                                variable: __wrapUserFunction(
+                                  {
+                                    type: "InteractionArgLoc",
+                                    actionName: "updateVariable",
+                                    interactionUuid: "_Rx3ewsrz",
+                                    componentUuid: "QM6oypJUBsNsh",
+                                    argName: "variable"
+                                  },
+                                  () => ({
+                                    objRoot: $state,
+                                    variablePath: ["textInput", "value"]
+                                  })
+                                ),
+                                operation: __wrapUserFunction(
+                                  {
+                                    type: "InteractionArgLoc",
+                                    actionName: "updateVariable",
+                                    interactionUuid: "_Rx3ewsrz",
+                                    componentUuid: "QM6oypJUBsNsh",
+                                    argName: "operation"
+                                  },
+                                  () => 0
+                                )
+                              };
+                              return __wrapUserFunction(
+                                {
+                                  type: "InteractionLoc",
+                                  actionName: "updateVariable",
+                                  interactionUuid: "_Rx3ewsrz",
+                                  componentUuid: "QM6oypJUBsNsh"
+                                },
+                                () =>
+                                  (({
+                                    variable,
+                                    value,
+                                    startIndex,
+                                    deleteCount
+                                  }) => {
+                                    const { objRoot, variablePath } = variable;
+
+                                    p.set(objRoot, variablePath, value);
+                                    return value;
+                                  })?.apply(null, [actionArgs]),
+                                actionArgs
+                              );
+                            })()
+                          : undefined;
+                        if (
+                          typeof $steps["setTextInputValue"] === "object" &&
+                          typeof $steps["setTextInputValue"].then === "function"
+                        ) {
+                          $steps["setTextInputValue"] = await __wrapUserPromise(
+                            {
+                              type: "InteractionLoc",
+                              actionName: "updateVariable",
+                              interactionUuid: "_Rx3ewsrz",
+                              componentUuid: "QM6oypJUBsNsh"
+                            },
+                            $steps["setTextInputValue"]
+                          );
+                        }
+                        $steps["customFunction"] = true
+                          ? (() => {
+                              const actionArgs = {};
+                              return __wrapUserFunction(
+                                {
+                                  type: "InteractionLoc",
+                                  actionName: "customFunction",
+                                  interactionUuid: "E2bsA4cPF",
+                                  componentUuid: "QM6oypJUBsNsh"
+                                },
+                                () =>
+                                  (({ customFunction }) => {
+                                    return customFunction();
+                                  })?.apply(null, [actionArgs]),
+                                actionArgs
+                              );
+                            })()
+                          : undefined;
+                        if (
+                          typeof $steps["customFunction"] === "object" &&
+                          typeof $steps["customFunction"].then === "function"
+                        ) {
+                          $steps["customFunction"] = await __wrapUserPromise(
+                            {
+                              type: "InteractionLoc",
+                              actionName: "customFunction",
+                              interactionUuid: "E2bsA4cPF",
+                              componentUuid: "QM6oypJUBsNsh"
+                            },
+                            $steps["customFunction"]
+                          );
+                        }
+                      }}
                     >
                       <div
                         className={classNames(
@@ -1367,7 +1457,6 @@ const PlasmicDescendants = {
     "menuBar",
     "h1",
     "section1",
-    "youTube",
     "rowContainer8",
     "brownColorBg",
     "section12",
@@ -1390,8 +1479,7 @@ const PlasmicDescendants = {
   menu: ["menu", "menuBar"],
   menuBar: ["menuBar"],
   h1: ["h1"],
-  section1: ["section1", "youTube", "rowContainer8"],
-  youTube: ["youTube"],
+  section1: ["section1", "rowContainer8"],
   rowContainer8: ["rowContainer8"],
   brownColorBg: [
     "brownColorBg",
@@ -1422,7 +1510,6 @@ type NodeDefaultElementType = {
   menuBar: "div";
   h1: "h1";
   section1: "div";
-  youTube: typeof YouTube;
   rowContainer8: "div";
   brownColorBg: "div";
   section12: "div";
@@ -1501,7 +1588,6 @@ export const PlasmicHomepage = Object.assign(
     menuBar: makeNodeComponent("menuBar"),
     h1: makeNodeComponent("h1"),
     section1: makeNodeComponent("section1"),
-    youTube: makeNodeComponent("youTube"),
     rowContainer8: makeNodeComponent("rowContainer8"),
     brownColorBg: makeNodeComponent("brownColorBg"),
     section12: makeNodeComponent("section12"),

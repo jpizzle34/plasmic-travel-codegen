@@ -800,14 +800,6 @@
   min-width: 0;
   padding: 8px;
 }
-.youTube:global(.__wab_instance) {
-  height: 320px;
-  width: 640px;
-  max-height: 100%;
-  max-width: 100%;
-  position: relative;
-  flex-shrink: 0;
-}
 .column___7GiGh {
   display: flex;
   position: relative;
