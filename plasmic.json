@@ -1,0 +1,318 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "enk3K4vZ6pmH6kVCoZJXGn",
+      "projectApiToken": "3n3SKEMyDjMJptsNvaK6yxRaa8PAgqwkfIhRbKT4ZG9SobeM3Kb5rE2pSYmbR338Z5p6vBTScOAnptZwGSbQ",
+      "projectName": "react-youtube",
+      "version": "4.9.0",
+      "cssFilePath": "plasmic/react_youtube/plasmic_react_youtube.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "CHO21V9uYw",
+          "name": "YouTube",
+          "componentImportPath": "@plasmicpkgs/react-youtube"
+        }
+      ]
+    },
+    {
+      "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
+      "projectApiToken": "vXGGQpdi9fhcncabBdg8DcMRUbkz0iRW6HS1jzQufQR6QH0MasPwr9SX7ap4SsK3xXwwXmzZtglWGe0Rm2nw",
+      "projectName": "plasmic-basic-components",
+      "version": "3.13.0",
+      "cssFilePath": "plasmic/plasmic_basic_components/plasmic_plasmic_basic_components.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "CMDBvOhaI4s",
+          "name": "Iframe",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "RhitNJW5Zu-",
+          "name": "Video",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "PKldDYkH42",
+          "name": "Embed",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "D4RbnlpRXg3",
+          "name": "DataProvider",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        }
+      ]
+    },
+    {
+      "projectId": "pQ8S4ksMaRtjf4LUNyJVwk",
+      "projectApiToken": "dEgQOb7YMDy2XMm2cEeynwTwtF3Bti8vwwTfcYTukVZuudglUTjCCqKQYOEyh5XtPNReetVko6AJ4RJkqJFHog",
+      "projectName": "Travel Website",
+      "version": "latest",
+      "cssFilePath": "plasmic/travel_website/plasmic_travel_website.module.css",
+      "components": [
+        {
+          "id": "QM6oypJUBsNsh",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "pQ8S4ksMaRtjf4LUNyJVwk",
+          "renderModuleFilePath": "plasmic/travel_website/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/index.tsx"
+          },
+          "cssFilePath": "plasmic/travel_website/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "FS9TNd8gFxWLy",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "pQ8S4ksMaRtjf4LUNyJVwk",
+          "renderModuleFilePath": "plasmic/travel_website/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/travel_website/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        },
+        {
+          "id": "U-O7o3saIllC5C",
+          "name": "TextInput",
+          "type": "managed",
+          "projectId": "pQ8S4ksMaRtjf4LUNyJVwk",
+          "renderModuleFilePath": "plasmic/travel_website/PlasmicTextInput.tsx",
+          "importSpec": {
+            "modulePath": "TextInput.tsx"
+          },
+          "cssFilePath": "plasmic/travel_website/PlasmicTextInput.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "text-input"
+        }
+      ],
+      "icons": [
+        {
+          "id": "uBa0bIPP1uW5ZV",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/travel_website/icons/PlasmicIcon__Icon.tsx"
+        },
+        {
+          "id": "Xm9qmMCcKOTCKB",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/travel_website/icons/PlasmicIcon__Checksvg.tsx"
+        },
+        {
+          "id": "e6r7uZ6Khx83_i",
+          "name": "SearchsvgIcon",
+          "moduleFilePath": "plasmic/travel_website/icons/PlasmicIcon__Searchsvg.tsx"
+        },
+        {
+          "id": "CIHJNtHjDvxzJO",
+          "name": "Icon3Icon",
+          "moduleFilePath": "plasmic/travel_website/icons/PlasmicIcon__Icon3.tsx"
+        },
+        {
+          "id": "-5skflCodsWzJ3",
+          "name": "Icon2Icon",
+          "moduleFilePath": "plasmic/travel_website/icons/PlasmicIcon__Icon2.tsx"
+        },
+        {
+          "id": "2XPkdIPWLW6OL1",
+          "name": "Icon28Icon",
+          "moduleFilePath": "plasmic/travel_website/icons/PlasmicIcon__Icon28.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "1TYI_iAHUviHJl",
+          "name": "logo (1).svg",
+          "filePath": "../public/plasmic/travel_website/images/logo1Svg.svg"
+        },
+        {
+          "id": "jQg-NRm80m7BpY",
+          "name": "leaves-bg.jpg",
+          "filePath": "../public/plasmic/travel_website/images/leavesBgjpg.jpeg"
+        },
+        {
+          "id": "Pn_ykvuqux1SkV",
+          "name": "pool-aerial.jpg",
+          "filePath": "../public/plasmic/travel_website/images/poolAerialjpg.jpeg"
+        },
+        {
+          "id": "t0vE9vhb5GIAL1",
+          "name": "video-thumnail.png",
+          "filePath": "../public/plasmic/travel_website/images/videoThumnailpng.png"
+        },
+        {
+          "id": "44REHTyWGeLVHd",
+          "name": "living-room.jpg",
+          "filePath": "../public/plasmic/travel_website/images/livingRoomjpg.jpeg"
+        },
+        {
+          "id": "uU11eklrpV7WY3",
+          "name": "spa.jpg",
+          "filePath": "../public/plasmic/travel_website/images/spajpg.jpeg"
+        },
+        {
+          "id": "8DXIvxQdD1fcys",
+          "name": "food.jpg",
+          "filePath": "../public/plasmic/travel_website/images/foodjpg.jpeg"
+        },
+        {
+          "id": "FsgemDHiP5zLjr",
+          "name": "waterfall.jpg",
+          "filePath": "../public/plasmic/travel_website/images/waterfalljpg.jpeg"
+        },
+        {
+          "id": "m35hWfKg1lRIAS",
+          "name": "coconut (1).jpg",
+          "filePath": "../public/plasmic/travel_website/images/coconut1Jpg.jpeg"
+        },
+        {
+          "id": "7S7KCmtnkzoP1c",
+          "name": "road-g6f4064e2a_1920.jpg",
+          "filePath": "../public/plasmic/travel_website/images/roadG6F4064E2A1920Jpg.jpeg"
+        },
+        {
+          "id": "GYFGTyDgK9ReMW",
+          "name": "peter-chirkov-ZjibYTJ8JT4-unsplash.jpg",
+          "filePath": "../public/plasmic/travel_website/images/peterChirkovZjibYtj8Jt4Unsplashjpg.jpeg"
+        },
+        {
+          "id": "EeWDzz5fnTex2b",
+          "name": "krystal-ng-DoppEKJjIbc-unsplash.jpg",
+          "filePath": "../public/plasmic/travel_website/images/krystalNgDoppEkJjIbcUnsplashjpg.jpeg"
+        },
+        {
+          "id": "5mqDv4b31z5cWt",
+          "name": "mj-tangonan-OE6qLhRHhhs-unsplash.jpg",
+          "filePath": "../public/plasmic/travel_website/images/mjTangonanOe6QLhRHhhsUnsplashjpg.jpeg"
+        },
+        {
+          "id": "oP_5-PNxqjVXQl",
+          "name": "hidayat-abisena--A2IuOZnmHs-unsplash.jpg",
+          "filePath": "../public/plasmic/travel_website/images/hidayatAbisenaA2IuOZnmHsUnsplashjpg.jpeg"
+        },
+        {
+          "id": "FSYENssLdsZIns",
+          "name": "sunset-g3807900dc_640.jpg",
+          "filePath": "../public/plasmic/travel_website/images/sunsetG3807900Dc640Jpg.jpeg"
+        },
+        {
+          "id": "bCulq0pV-rEiZH",
+          "name": "nathan-dumlao-etkmWcqtZzg-unsplash.jpg",
+          "filePath": "../public/plasmic/travel_website/images/nathanDumlaoEtkmWcqtZzgUnsplashjpg.jpeg"
+        },
+        {
+          "id": "KFKDap2TVgQsIN",
+          "name": "ornate-g752eb5b7f_640.jpg",
+          "filePath": "../public/plasmic/travel_website/images/ornateG752Eb5B7F640Jpg.jpeg"
+        },
+        {
+          "id": "fZV9SJJRc2fF49",
+          "name": "jonathan-borba-GN87eIR9xUs-unsplash.jpg",
+          "filePath": "../public/plasmic/travel_website/images/jonathanBorbaGn87EIr9XUsUnsplashjpg.jpeg"
+        },
+        {
+          "id": "8RSDWUQ7ZgWTe3",
+          "name": "stephanie-harvey-OTUahHcqs0Y-unsplash (1).jpg",
+          "filePath": "../public/plasmic/travel_website/images/stephanieHarveyOtUahHcqs0YUnsplash1Jpg.jpeg"
+        },
+        {
+          "id": "Uu1Vu9IAnXBjek",
+          "name": "peter-chirkov-ZjibYTJ8JT4-unsplash.jpg 2",
+          "filePath": "../public/plasmic/travel_website/images/peterChirkovZjibYtj8Jt4Unsplashjpg2.jpeg"
+        },
+        {
+          "id": "srdQqLwNh1nTH6",
+          "name": "frost-6792549_1920.jpg",
+          "filePath": "../public/plasmic/travel_website/images/frost67925491920Jpg.jpeg"
+        },
+        {
+          "id": "XW0r04fH9R4LVP",
+          "name": "frost-6792549_1920.jpg 2",
+          "filePath": "../public/plasmic/travel_website/images/frost67925491920Jpg2.jpeg"
+        },
+        {
+          "id": "FD8nE5sKWhis2n",
+          "name": "image",
+          "filePath": "../public/plasmic/travel_website/images/image.png"
+        },
+        {
+          "id": "DJEEK3YE_V2waI",
+          "name": "image 2",
+          "filePath": "../public/plasmic/travel_website/images/image2.png"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "VlghEYadgA",
+          "name": "PlasmicHead",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "4mhnC0X3q-",
+          "name": "Fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ]
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "0AKxbeQgHDnfsy",
+        "name": "Screen",
+        "projectId": "pQ8S4ksMaRtjf4LUNyJVwk",
+        "contextFilePath": "plasmic/travel_website/PlasmicGlobalVariant__Screen.tsx"
+      },
+      {
+        "id": "B-sLp2Yc5_",
+        "name": "Schedule",
+        "projectId": "pQ8S4ksMaRtjf4LUNyJVwk",
+        "contextFilePath": "plasmic/travel_website/PlasmicGlobalVariant__Schedule.tsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "nextjsConfig": {
+    "pagesDir": "../pages"
+  },
+  "cliVersion": "0.1.231",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.231/dist/plasmic.schema.json"
+}
